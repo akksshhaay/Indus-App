@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B93F811-D680-4E40-A360-A4B08AB9C918}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IndusMap</RootNamespace>
+    <AssemblyName>IndusMap</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddSealData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSealData.Designer.cs">
+      <DependentUpon>AddSealData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CNNTrainingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CNNTrainingForm.Designer.cs">
+      <DependentUpon>CNNTrainingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomView.Designer.cs">
+      <DependentUpon>CustomView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpSymbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpSymbol.Designer.cs">
+      <DependentUpon>HelpSymbol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IndsMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IndsMap.Designer.cs">
+      <DependentUpon>IndsMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IndusDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndusDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IndusDbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndusDbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IndusDbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndusDbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IndusDbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndusDbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IndusDbDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndusDbDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IndusDbDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndusDbDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IndusDbDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndusDbDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SymbolRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SymbolRegistration.Designer.cs">
+      <DependentUpon>SymbolRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOneSeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewOneSeal.Designer.cs">
+      <DependentUpon>ViewOneSeal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSeals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSeals.Designer.cs">
+      <DependentUpon>ViewSeals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSymbolSeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSymbolSeal.Designer.cs">
+      <DependentUpon>ViewSymbolSeal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddSealData.resx">
+      <DependentUpon>AddSealData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CNNTrainingForm.resx">
+      <DependentUpon>CNNTrainingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomView.resx">
+      <DependentUpon>CustomView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IndsMap.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IndsMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SymbolRegistration.resx">
+      <DependentUpon>SymbolRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewOneSeal.resx">
+      <DependentUpon>ViewOneSeal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSeals.resx">
+      <DependentUpon>ViewSeals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSymbolSeal.resx">
+      <DependentUpon>ViewSymbolSeal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="IndusDbDataSet.xsc">
+      <DependentUpon>IndusDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IndusDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IndusDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IndusDbDataSet.xss">
+      <DependentUpon>IndusDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IndusDbDataSet1.xsc">
+      <DependentUpon>IndusDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="IndusDbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IndusDbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IndusDbDataSet1.xss">
+      <DependentUpon>IndusDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="IndusDbDataSet2.xsc">
+      <DependentUpon>IndusDbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="IndusDbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IndusDbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IndusDbDataSet2.xss">
+      <DependentUpon>IndusDbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="IndusDbDataSet3.xsc">
+      <DependentUpon>IndusDbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="IndusDbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IndusDbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IndusDbDataSet3.xss">
+      <DependentUpon>IndusDbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="IndusDbDataSet4.xsc">
+      <DependentUpon>IndusDbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="IndusDbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IndusDbDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IndusDbDataSet4.xss">
+      <DependentUpon>IndusDbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="IndusDbDataSet5.xsc">
+      <DependentUpon>IndusDbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="IndusDbDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IndusDbDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IndusDbDataSet5.xss">
+      <DependentUpon>IndusDbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="IndusDbDataSet6.xsc">
+      <DependentUpon>IndusDbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="IndusDbDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IndusDbDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IndusDbDataSet6.xss">
+      <DependentUpon>IndusDbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\IVC-1024x585.jpg" />
+    <Content Include="IndusDb.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IndusDb_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>IndusDb.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
